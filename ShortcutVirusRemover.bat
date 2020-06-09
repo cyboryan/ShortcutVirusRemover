@@ -32,8 +32,8 @@ echo.
 echo.	            Created by %dev% - Version %ver%
 echo. 
 echo. 
-echo This program is to remove shortcut virus in your External Devices.
-echo Recommended to use for infected External Devices.
+echo A simple batch program that simplifies the removal of shortcut virus on modern
+echo             flash drives and recovers files hidden caused by it.
 TIMEOUT /T 5 /NOBREAK
 goto mainPage
 
@@ -42,8 +42,9 @@ cls
 echo %title% %ver%
 echo Created by %dev%
 echo ===============================================================================
-echo Type drive letter to recover. Type "exit" to close application.
-echo More information about this program can be seen by typing "about".
+echo Type the drive letter of the infected drive. 
+echo Type "exit" to close application.
+echo Type "about" to see more information about the program.
 echo. 
 SET command=
 SET /P command= Command: 
@@ -77,7 +78,7 @@ echo %title% %ver%
 echo Created by %dev%
 echo ===============================================================================
 start %command%:\
-ECHO.Recovery Complete ... We opened the selected drive for you to check ...
+ECHO.Action successfully completed! We opened the selected drive for you to check :))
 ECHO.
 echo *** IMPORTANT ***
 echo 1. Check your Flash drive for unknown files and folders.
@@ -85,9 +86,8 @@ echo    If there are any, delete them ...
 echo 2. You can get access to your files again through a (blank) name folder.
 echo. 
 echo NOTE: 
-echo If it didn't work, the shortcut virus doesn't exist in the selected drive.
-echo Else, it's a different virus attacking your USB or there's nothing at all :P
-echo. 
+echo Nothing seems to happen if the drive is not infected by the shortcut virus.
+echo especially if you selected a drive that isn't external.
 pause
 goto mainPage
 
@@ -96,23 +96,25 @@ cls
 echo %title% %ver%
 echo Created by %dev%
 echo ===============================================================================
-echo %dev%'s Shortcut Virus Remover is a remake of Eranda's Shortcut Virus Remover 
-echo Version with added features ...
-echo - Select drive letter by typing it,
-echo - Automatically open selected drive after recovery,
-echo - and more features to come if deemed necessary.
+echo Shortcut Virus Remover is a simple Microsoft Windows Batch Program that 
+echo simplifies the removal of shortcut virus on modern flash drives and recovers 
+echo files hidden by the virus.
+echo.
+echo This is %dev%'s version of Eranda's Shortcut Virus Remover with some tweaks
+echo - Ability to type infected drive by a single letter
+echo - Automatically open selected drive after recovery
 echo. 
 echo Startup Text credits to Eranda.
 echo https://www.ShortcutVirusRemover.com
 echo. 
-echo Dev Social Accounts:
+echo %dev%'s Social Media Accounts:
 echo Facebook: @officialCyboryan
 echo Twitter/Instagram/GitHub: @cyboryan
+echo.
 echo Official Website: https://cyboryan.github.io
 echo.
 echo File issues if you found any on this program at
 echo https://www.github.com/cyboryan/ShortcutVirusRemover
-echo. 
 echo. 
 pause
 goto mainPage
