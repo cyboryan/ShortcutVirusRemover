@@ -8,7 +8,9 @@ SET dev=cyboryan
 SET title=Shortcut Virus Remover
 TITLE %title% %ver%
 
+::
 :: Program startup
+::
 :startup
 cls
 color a                          
@@ -37,6 +39,9 @@ echo             flash drives and recovers files hidden caused by it.
 TIMEOUT /T 5 /NOBREAK
 goto mainPage
 
+::
+:: Main Page where the user types in his/her command for the program
+::
 :mainPage
 cls
 echo %title% %ver%
@@ -49,13 +54,18 @@ echo.
 SET command=
 SET /P command= Command: 
 
+:: Check if Location Exists
 IF EXIST %command%:\ ( goto removeVirus )
+
+:: If not exist, check if command is EXIT
 IF "%command%"=="exit" ( goto exit )
 IF "%command%"=="EXIT" ( goto exit )
+
+:: If not exit, check if command is ABOUT
 IF "%command%"=="about" ( goto about )
 IF "%command%"=="ABOUT" ( goto about )
 
-:: if invalid input
+:: If neither of the three, echo error
 cls
 echo %title% %ver%
 echo Created by %dev%
@@ -65,6 +75,11 @@ echo.
 TIMEOUT /T 5
 goto mainPage
 
+::
+:: Function that eradicates the shortcut virus and recovers files
+:: This function is already seen in Google, though this simple program simplifies
+:: this so there's no longer necessary to memorize the syntax
+::
 :removeVirus
 cls
 echo %title% %ver%
@@ -73,6 +88,7 @@ echo ===========================================================================
 ECHO.Removing Virus at Drive %command%:\. Please wait.
 attrib -h -s -r -a /s /d %command%:*.*
 
+:: Show this message when the program successfully executed the script
 cls
 echo %title% %ver%
 echo Created by %dev%
@@ -91,6 +107,9 @@ echo especially if you selected a drive that isn't external.
 pause
 goto mainPage
 
+::
+:: Show the about section of the program
+::
 :about
 cls
 echo %title% %ver%
@@ -120,6 +139,9 @@ pause
 goto mainPage
 
 
+::
+:: Exit Program
+::
 :exit
 cls
 echo %title% %ver%
