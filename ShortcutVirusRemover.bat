@@ -128,7 +128,7 @@ cls
 echo Shortcut Virus Remover %ver%
 echo Created by %dev%
 echo ===============================================================================
-echo XYPOWER Shortcut Virus Remover is a remake of Eranda's Shortcut Virus Remover 
+echo Shortcut Virus Remover is a remake of Eranda's Shortcut Virus Remover 
 echo Version with added features ...
 echo - Select drive letter by typing it,
 echo - Automatically open selected drive after recovery,
