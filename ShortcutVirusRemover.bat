@@ -113,7 +113,7 @@ echo - Automatically open selected drive after recovery,
 echo - and more features to come if deemed necessary.
 echo. 
 echo Startup Text credits to Eranda.
-echo www.ShortcutVirusRemover.com
+echo https://www.ShortcutVirusRemover.com
 echo. 
 echo Dev Social Accounts:
 echo Facebook: @officialCyboryan
