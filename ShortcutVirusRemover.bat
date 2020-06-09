@@ -121,7 +121,7 @@ echo www.ShortcutVirusRemover.com
 echo. 
 echo Dev Social Accounts:
 echo Facebook: @officialCyboryan
-echo Twitter|Instagram|GitHub: @cyboryan
+echo Twitter/Instagram/GitHub: @cyboryan
 echo Official Website: https://cyboryan.github.io
 echo. 
 echo. 
