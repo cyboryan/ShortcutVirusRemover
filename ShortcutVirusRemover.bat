@@ -8,15 +8,7 @@ SET dev=cyboryan
 SET title=Shortcut Virus Remover
 TITLE %title% %ver%
 
-::LIST OF GOTO COMMANDS
-:: STARTUP, mainPage
-:: #WRONGINPUT
-:: #ABOUT
-::  REMOVEVIRUS
-::   EXITCONFIRMATION
-::   ABOUTCONFIRMATION
-:: EXIT
-
+:: Program startup
 :startup
 cls
 color a                          
@@ -42,8 +34,7 @@ echo.
 echo. 
 echo This program is to remove shortcut virus in your External Devices.
 echo Recommended to use for infected External Devices.
-echo.
-pause
+TIMEOUT /T 5 /NOBREAK
 goto mainPage
 
 :mainPage
