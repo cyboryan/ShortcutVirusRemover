@@ -5,7 +5,8 @@ color a
 SET ver=1.2.0
 ::SET DEVELOPER
 SET dev=cyboryan
-TITLE Shortcut Virus Remover %ver%
+SET title=Shortcut Virus Remover
+TITLE %title% %ver%
 
 ::LIST OF GOTO COMMANDS
 :: STARTUP, mainPage
@@ -47,7 +48,7 @@ goto mainPage
 
 :mainPage
 cls
-echo Shortcut Virus Remover %ver%
+echo %title% %ver%
 echo Created by %dev%
 echo ===============================================================================
 echo Type drive letter to recover. Type "exit" to close application.
@@ -64,7 +65,7 @@ IF "%command%"=="ABOUT" ( goto about )
 
 :: if invalid input
 cls
-echo Shortcut Virus Remover %ver%
+echo %title% %ver%
 echo Created by %dev%
 echo ===============================================================================
 echo Incorrect input / Drive unavailable
@@ -74,7 +75,7 @@ goto mainPage
 
 :removeVirus
 cls
-echo Shortcut Virus Remover %ver%
+echo %title% %ver%
 echo Created by %dev%
 echo ===============================================================================
 ECHO.Removing Virus at Drive %command%:\. Please wait.
@@ -83,7 +84,7 @@ goto recoveryComplete
 
 :recoveryComplete
 cls
-echo Shortcut Virus Remover %ver%
+echo %title% %ver%
 echo Created by %dev%
 echo ===============================================================================
 start %command%:\
@@ -103,7 +104,7 @@ goto mainPage
 
 :about
 cls
-echo Shortcut Virus Remover %ver%
+echo %title% %ver%
 echo Created by %dev%
 echo ===============================================================================
 echo %dev%'s Shortcut Virus Remover is a remake of Eranda's Shortcut Virus Remover 
@@ -129,7 +130,7 @@ goto mainPage
 
 :wrongInput
 cls
-echo Shortcut Virus Remover %ver%
+echo %title% %ver%
 echo Created by %dev%
 echo ===============================================================================
 echo Incorrect input / Drive unavailable
@@ -139,7 +140,7 @@ goto mainPage
 
 :exit
 cls
-echo Shortcut Virus Remover %ver%
+echo %title% %ver%
 echo Created by %dev%
 echo ===============================================================================
 echo Closing application ...
