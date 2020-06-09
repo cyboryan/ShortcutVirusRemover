@@ -80,9 +80,7 @@ echo Created by %dev%
 echo ===============================================================================
 ECHO.Removing Virus at Drive %command%:\. Please wait.
 attrib -h -s -r -a /s /d %command%:*.*
-goto recoveryComplete
 
-:recoveryComplete
 cls
 echo %title% %ver%
 echo Created by %dev%
