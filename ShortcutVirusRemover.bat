@@ -3,13 +3,13 @@
 color a
 SET beta=0
 ::SET PROGRAM BUILD
-SET build=49
+SET build=51
 ::SET EXACT VERSION
 SET ver=1.1.0
 ::SET VERSION TO BE BUILT
 SET vertobe=1.1.1
 SET dev=cyboryan
-TITLE XYPOWER Shortcut Virus Remover %ver%
+TITLE Shortcut Virus Remover %ver%
 
 ::LIST OF GOTO COMMANDS
 :: STARTUP, STARTBETA
@@ -56,7 +56,7 @@ goto startbeta
 :startbeta
 color a
 cls
-echo XYPOWER Shortcut Virus Remover %ver%
+echo Shortcut Virus Remover %ver%
 echo Created by %dev%
 echo ===============================================================================
 echo Type drive letter to recover. Type "exit" to close application.
@@ -77,19 +77,19 @@ IF EXIST %command%:\ (
 :: Added Backup Command Confirmation ^_^
 
 cls
-echo XYPOWER Shortcut Virus Remover %ver%
+echo Shortcut Virus Remover %ver%
 echo Created by %dev%
 echo ===============================================================================
 ECHO.Removing Virus at Drive %command%:\ - 33 percent
 attrib -h -s -r -a /s /d %command%:*.*
 cls
-echo XYPOWER Shortcut Virus Remover %ver%
+echo Shortcut Virus Remover %ver%
 echo Created by %dev%
 echo ===============================================================================
 ECHO.Removing Virus at Drive %command%:\ - 67 percent
 attrib -h -s -r -a /s /d %command%:*.*
 cls
-echo XYPOWER Shortcut Virus Remover %ver%
+echo Shortcut Virus Remover %ver%
 echo Created by %dev%
 echo ===============================================================================
 ECHO.Removing Virus at Drive %command%:\ - 90 percent
@@ -98,7 +98,7 @@ goto recoverycomplete
 
 :recoverycomplete
 cls
-echo XYPOWER Shortcut Virus Remover %ver%
+echo Shortcut Virus Remover %ver%
 echo Created by %dev%
 echo ===============================================================================
 start %command%:\
@@ -139,7 +139,7 @@ IF "%command%"=="betadevelopmentcyboryan" (
 
 :about
 cls
-echo XYPOWER Shortcut Virus Remover %ver% Build %build%
+echo Shortcut Virus Remover %ver% Build %build%
 echo Created by %dev%
 echo ===============================================================================
 echo XYPOWER Shortcut Virus Remover is a remake of Eranda's Shortcut Virus Remover 
@@ -160,7 +160,7 @@ goto startbeta
 
 :wronginput
 cls
-echo XYPOWER Shortcut Virus Remover %ver%
+echo Shortcut Virus Remover %ver%
 echo Created by %dev%
 echo ===============================================================================
 echo Incorrect input / Drive unavailable
@@ -170,7 +170,7 @@ goto startbeta
 
 :exit
 cls
-echo XYPOWER Shortcut Virus Remover %ver%
+echo Shortcut Virus Remover %ver%
 echo Created by %dev%
 echo ===============================================================================
 echo Closing application ...
