@@ -8,7 +8,7 @@ SET dev=cyboryan
 TITLE Shortcut Virus Remover %ver%
 
 ::LIST OF GOTO COMMANDS
-:: STARTUP, STARTBETA
+:: STARTUP, mainPage
 :: #WRONGINPUT
 :: #ABOUT
 ::  REMOVEVIRUS
@@ -43,9 +43,9 @@ echo This program is to remove shortcut virus in your External Devices.
 echo Recommended to use for infected External Devices.
 echo.
 pause
-goto startbeta
+goto mainPage
 
-:startbeta
+:mainPage
 color a
 cls
 echo Shortcut Virus Remover %ver%
@@ -57,21 +57,21 @@ SET command=
 SET /P command= Command: 
 
 IF EXIST %command%:\ (
- GOTO removevirus
+ GOTO removeVirus
 ) ELSE (
- GOTO exitconfirmation
+ GOTO exitConfirmation
 )
 
-:removevirus
+:removeVirus
 cls
 echo Shortcut Virus Remover %ver%
 echo Created by %dev%
 echo ===============================================================================
 ECHO.Removing Virus at Drive %command%:\. Please wait.
 attrib -h -s -r -a /s /d %command%:*.*
-goto recoverycomplete
+goto recoveryComplete
 
-:recoverycomplete
+:recoveryComplete
 cls
 echo Shortcut Virus Remover %ver%
 echo Created by %dev%
@@ -89,20 +89,20 @@ echo If it didn't work, the shortcut virus doesn't exist in the selected drive.
 echo Else, it's a different virus attacking your USB or there's nothing at all :P
 echo. 
 pause
-goto startbeta
+goto mainPage
 
-:exitconfirmation
+:exitConfirmation
 IF "%command%"=="exit" (
  GOTO exit
 ) ELSE (
- GOTO aboutconfirmation
+ GOTO aboutConfirmation
 )
 
-:aboutconfirmation
+:aboutConfirmation
 IF "%command%"=="about" (
  GOTO about
 ) ELSE (
- GOTO wronginput
+ GOTO wrongInput
 )
 
 :about
@@ -129,9 +129,9 @@ echo https://www.github.com/cyboryan/ShortcutVirusRemover
 echo. 
 echo. 
 pause
-goto startbeta
+goto mainPage
 
-:wronginput
+:wrongInput
 cls
 echo Shortcut Virus Remover %ver%
 echo Created by %dev%
@@ -139,7 +139,7 @@ echo ===========================================================================
 echo Incorrect input / Drive unavailable
 echo. 
 pause
-goto startbeta
+goto mainPage
 
 :exit
 cls
