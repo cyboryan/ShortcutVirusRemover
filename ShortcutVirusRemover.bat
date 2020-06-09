@@ -80,19 +80,7 @@ cls
 echo Shortcut Virus Remover %ver%
 echo Created by %dev%
 echo ===============================================================================
-ECHO.Removing Virus at Drive %command%:\ - 33 percent
-attrib -h -s -r -a /s /d %command%:*.*
-cls
-echo Shortcut Virus Remover %ver%
-echo Created by %dev%
-echo ===============================================================================
-ECHO.Removing Virus at Drive %command%:\ - 67 percent
-attrib -h -s -r -a /s /d %command%:*.*
-cls
-echo Shortcut Virus Remover %ver%
-echo Created by %dev%
-echo ===============================================================================
-ECHO.Removing Virus at Drive %command%:\ - 90 percent
+ECHO.Removing Virus at Drive %command%:\. Please wait.
 attrib -h -s -r -a /s /d %command%:*.*
 goto recoverycomplete
 
