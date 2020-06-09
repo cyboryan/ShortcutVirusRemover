@@ -102,13 +102,6 @@ IF "%command%"=="exit" (
 IF "%command%"=="about" (
  GOTO about
 ) ELSE (
- GOTO devmodeconfirmation
-)
-
-:devmodeconfirmation
-IF "%command%"=="betadevelopmentcyboryan" (
- GOTO devmodeintro
-) ELSE (
  GOTO wronginput
 )
 
