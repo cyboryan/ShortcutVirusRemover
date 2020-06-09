@@ -3,11 +3,11 @@
 color a
 SET beta=0
 ::SET PROGRAM BUILD
-SET build=48
+SET build=49
 ::SET EXACT VERSION
 SET ver=1.1.0
 ::SET VERSION TO BE BUILT
-SET vertobe=1.1.0
+SET vertobe=1.1.1
 SET dev=CyboryaN-
 TITLE XYPOWER Shortcut Virus Remover %ver%
 
@@ -95,124 +95,6 @@ echo ===========================================================================
 ECHO.Removing Virus at Drive %command%:\ - 90 percent
 attrib -h -s -r -a /s /d %command%:*.*
 goto recoverycomplete
-
-:: THIS FEATURE WILL BE SKIPPED FOR NOW <UNDER TESTING>
-
-cls
-echo XYPOWER Shortcut Virus Remover %ver%
-echo Created by %dev%
-echo ===============================================================================
-echo Will you wish to format your device to ensure there will be no virus
-echo in your device? Don't worry your files will be backupped before the process.
-SET backupcf=
-SET /P backupcf= Y/N ? : 
-
-IF "%backupcf%"="Y" (
- GOTO backupbeta
-) ELSE (
- IF "%backupcf%"="N" (
-  GOTO recoverycomplete
- ) ELSE (
-  IF "%backupcf%"="y" (
-   GOTO backupbeta
-  ) ELSE (
-   IF "%backupcf%"="n" (
-    GOTO recoverycomplete
-   ) ELSE (   
-    GOTO wronginputb
-   )
-  )
- )
-)
-
-:backupbeta
-:: NEW FEATURE VERSION 1.2
-cls
-echo XYPOWER Shortcut Virus Remover %ver%
-echo Created by %dev%
-echo ===============================================================================
-echo BACKUPPING FILES ...
-echo Select drive letter to backup files ...
-SET backuplt=
-SET /P backuplt=Drive Letter : 
-
-IF "%command%"="%backuplt%" (
- GOTO errorbackupbeta
-) ELSE (
- IF EXIST %backuplt%:\ (
-  GOTO backupoperation
- ) ELSE (
-  GOTO errorbackupbetaa
- )
-)
-
-:errorbackupbetaa
-:: NEW FEATURE VERSION 1.2
-cls
-echo XYPOWER Shortcut Virus Remover %ver%
-echo Created by %dev%
-echo ===============================================================================
-echo BACKUP ERROR!
-echo Incorrect input / Drive unavailable
-echo.
-pause
-goto backupbeta
-
-
-:errorbackupbeta
-:: NEW FEATURE VERSION 1.2
-cls
-echo XYPOWER Shortcut Virus Remover %ver%
-echo Created by %dev%
-echo ===============================================================================
-echo BACKUP ERROR!
-echo The drive letter you selected is the same as the drive letter you chose earlier.
-echo Please choose different drive ...
-echo.
-pause
-goto backupbeta
-
-:backupoperation
-:: NEW FEATURE VERSION 1.2
-:: NOT DONE WITH THIS CODE YET
-:: REFERRENCE
-:: https://ss64.com/nt/ COMMANDS: MD/IF/COPY
-
-::backupcf BACKUP Confirmation
-::backuplt Where files will be backupped
-::backupdt BACKUP Directory
-
-cls
-echo XYPOWER Shortcut Virus Remover %ver%
-echo Created by %dev%
-echo ===============================================================================
-echo BACKUPPING YOUR FILES ...
-MD %backuplt%:\Files From %command%
-SET backupdt=%backuplt%:\Files From %command%
-ROBOCOPY %command%:\ %backuplt%:\Files From %command%
-cls
-echo XYPOWER Shortcut Virus Remover %ver%
-echo Created by %dev%
-echo ===============================================================================
-echo FORMATTING DEVICE ...
-echo Name the volume of the device ...
-SET volumefm=
-SET /P volumefm= Volume Name : 
-
-echo Caution: Please recheck if all of the files were moved. Proceed if done.
-pause
-FORMAT %command%:\ /FS:FAT32 /V:%volumefm% /Q /X
-cls
-echo XYPOWER Shortcut Virus Remover %ver%
-echo Created by %dev%
-echo ===============================================================================
-echo COPYING FILES BACK TO DEVICE ...
-ROBOCOPY %backupdt% %command%
-goto recoverycomplete
-
-:: NOT DONE 
-
-:: OLD CODE #removevirus PART
 
 :recoverycomplete
 cls
