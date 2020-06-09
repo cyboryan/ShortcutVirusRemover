@@ -58,7 +58,9 @@ SET /P command= Command:
 
 IF EXIST %command%:\ ( goto removeVirus )
 IF "%command%"=="exit" ( goto exit )
+IF "%command%"=="EXIT" ( goto exit )
 IF "%command%"=="about" ( goto about )
+IF "%command%"=="ABOUT" ( goto about )
 
 :: if invalid input
 cls
