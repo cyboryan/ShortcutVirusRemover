@@ -8,7 +8,7 @@ SET build=49
 SET ver=1.1.0
 ::SET VERSION TO BE BUILT
 SET vertobe=1.1.1
-SET dev=CyboryaN-
+SET dev=cyboryan
 TITLE XYPOWER Shortcut Virus Remover %ver%
 
 ::LIST OF GOTO COMMANDS
