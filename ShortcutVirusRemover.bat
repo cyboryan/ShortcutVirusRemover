@@ -117,15 +117,6 @@ echo.
 pause
 goto mainPage
 
-:wrongInput
-cls
-echo %title% %ver%
-echo Created by %dev%
-echo ===============================================================================
-echo Incorrect input / Drive unavailable
-echo. 
-pause
-goto mainPage
 
 :exit
 cls
