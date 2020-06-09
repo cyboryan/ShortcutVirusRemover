@@ -46,7 +46,6 @@ pause
 goto mainPage
 
 :mainPage
-color a
 cls
 echo Shortcut Virus Remover %ver%
 echo Created by %dev%
