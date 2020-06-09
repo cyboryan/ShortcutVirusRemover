@@ -55,11 +55,19 @@ echo.
 SET command=
 SET /P command= Command: 
 
-IF EXIST %command%:\ (
- GOTO removeVirus
-) ELSE (
- GOTO exitConfirmation
-)
+IF EXIST %command%:\ ( goto removeVirus )
+IF "%command%"=="exit" ( goto exit )
+IF "%command%"=="about" ( goto about )
+
+:: if invalid input
+cls
+echo Shortcut Virus Remover %ver%
+echo Created by %dev%
+echo ===============================================================================
+echo Incorrect input / Drive unavailable
+echo. 
+pause
+goto mainPage
 
 :removeVirus
 cls
@@ -89,20 +97,6 @@ echo Else, it's a different virus attacking your USB or there's nothing at all :
 echo. 
 pause
 goto mainPage
-
-:exitConfirmation
-IF "%command%"=="exit" (
- GOTO exit
-) ELSE (
- GOTO aboutConfirmation
-)
-
-:aboutConfirmation
-IF "%command%"=="about" (
- GOTO about
-) ELSE (
- GOTO wrongInput
-)
 
 :about
 cls
