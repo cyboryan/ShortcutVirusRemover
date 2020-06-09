@@ -126,17 +126,19 @@ cls
 echo Shortcut Virus Remover %ver%
 echo Created by %dev%
 echo ===============================================================================
-echo Shortcut Virus Remover is a remake of Eranda's Shortcut Virus Remover 
+echo %dev%'s Shortcut Virus Remover is a remake of Eranda's Shortcut Virus Remover 
 echo Version with added features ...
 echo - Select drive letter by typing it,
 echo - Automatically open selected drive after recovery,
-echo - and more features to come if necessary.
+echo - and more features to come if deemed necessary.
 echo. 
-echo Startup Text credits to Eranda. Be sure to try his own version too FOR FREE!
+echo Startup Text credits to Eranda.
 echo www.ShortcutVirusRemover.com
 echo. 
-echo Program created by %dev%
-echo www.facebook.com/CyboryanGamingAndTech
+echo Dev Social Accounts:
+echo Facebook: @officialCyboryan
+echo Twitter|Instagram|GitHub: @cyboryan
+echo Official Website: https://cyboryan.github.io
 echo. 
 echo. 
 pause
