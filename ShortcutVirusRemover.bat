@@ -1,11 +1,9 @@
 @echo off
 
 color a
-SET beta=0
 ::SET EXACT VERSION
 SET ver=1.1.0
-::SET VERSION TO BE BUILT
-SET vertobe=1.1.1
+::SET DEVELOPER
 SET dev=cyboryan
 TITLE Shortcut Virus Remover %ver%
 
