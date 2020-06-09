@@ -51,6 +51,7 @@ echo Shortcut Virus Remover %ver%
 echo Created by %dev%
 echo ===============================================================================
 echo Type drive letter to recover. Type "exit" to close application.
+echo More information about this program can be seen by typing "about".
 echo. 
 SET command=
 SET /P command= Command: 
