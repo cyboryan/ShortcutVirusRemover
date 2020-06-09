@@ -2,7 +2,7 @@
 
 color a
 ::SET EXACT VERSION
-SET ver=1.1.0
+SET ver=1.2.0
 ::SET DEVELOPER
 SET dev=cyboryan
 TITLE Shortcut Virus Remover %ver%
