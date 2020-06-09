@@ -61,7 +61,7 @@ echo Created by %dev%
 echo ===============================================================================
 echo Incorrect input / Drive unavailable
 echo. 
-pause
+TIMEOUT /T 5
 goto mainPage
 
 :removeVirus
