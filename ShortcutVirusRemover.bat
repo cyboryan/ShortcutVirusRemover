@@ -2,8 +2,6 @@
 
 color a
 SET beta=0
-::SET PROGRAM BUILD
-SET build=51
 ::SET EXACT VERSION
 SET ver=1.1.0
 ::SET VERSION TO BE BUILT
@@ -127,7 +125,7 @@ IF "%command%"=="betadevelopmentcyboryan" (
 
 :about
 cls
-echo Shortcut Virus Remover %ver% Build %build%
+echo Shortcut Virus Remover %ver%
 echo Created by %dev%
 echo ===============================================================================
 echo XYPOWER Shortcut Virus Remover is a remake of Eranda's Shortcut Virus Remover 
