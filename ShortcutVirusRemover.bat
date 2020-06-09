@@ -17,10 +17,6 @@ TITLE Shortcut Virus Remover %ver%
 :: EXIT
 
 :startup
-
-:: VERSION 1.2 CHANGES AT THIS PART
-:: Removed 1 space at "Created by %dev%" part
-
 cls
 color a                          
 echo  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -67,11 +63,6 @@ IF EXIST %command%:\ (
 )
 
 :removevirus
-
-:: VERSION 1.2 CHANGES TO THIS PART
-:: start %command%:\ disabled
-:: Added Backup Command Confirmation ^_^
-
 cls
 echo Shortcut Virus Remover %ver%
 echo Created by %dev%
