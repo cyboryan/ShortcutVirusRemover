@@ -1,6 +1,6 @@
 # Shortcut Virus Remover
-A simple Microsoft Windows Batch Project that simplifies the removal of shortcut virus on modern flash drives and recovers files hidden by the virus. You simply add your drive letter where your flash drive is located then a simple script will remove it for you.
+Shortcut Virus Remover aims to simplify the retrieval of super-hidden files caused by the Shortcut Virus. It also attempts to remove the virus itself.
 
-This was my first project made back in 2016. Made due to a rising shortcut virus issues in our school. Though, with rising cool antiviruses such as SMADAV that automates this thing when a flash drive is connected, this project has peacefully discontinued for good. Though, it was a good experience to get myself started into programming.
+This project marks the first application Xyber Pastoril ever created, with very minimal programming knowledge. It was made in 2016 due to a rising shortcut virus issue in Plaridel National High School. It was used momentarily until the school discovered SMADAV that automates the action on device insertion, prompted discontinuation of the project.
 
-Recently updated on June 2020 after 4 years of inactivity to fix some tweaks and update tooltip based on new programming knowledge. With this, the version is already bumped to v1.2.0 from v1.1.0.
+This project was recently updated last June 2020 after a few years of inactivity to make code changes, and updated tooltips based on new programming knowledge.
